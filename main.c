@@ -2,10 +2,8 @@
 //  main.c
 //  powerset
 //
-//  Created by 陶越 on 17/4/8.
-//  Copyright © 2017年 陶越. All rights reserved.
+//  Created by ziggytao on 17/4/8.
 //
-
 #include <stdio.h>
 #define MAX 100
 char value[MAX];
@@ -17,9 +15,7 @@ int isset(int arr[],int n)
     for(i = 0; i < n; i++)
     {
         if(arr[i] == 1)
-        {
             return 1;
-        }
     }
     return 0;
 }
@@ -46,9 +42,7 @@ void show1(char arr[],int mask[],int n)
     for(i = 0; i < n; i++)
     {
         if(mask[i] == 1)
-        {
             printf("%c",arr[i]);
-        }
     }
     printf("\t");
 }
@@ -70,6 +64,5 @@ int main(int argc, const char * argv[]) {
         printf("Enter a number:");
         scanf("%d",&n);
     }
-    
     return 0;
 }
